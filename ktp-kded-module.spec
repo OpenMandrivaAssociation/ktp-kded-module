@@ -1,6 +1,6 @@
 Summary:	KDE Telepathy KDED module
 Name:		ktp-kded-module
-Version:	16.12.2
+Version:	17.04.0
 Release:	1
 Epoch:		1
 License:	GPLv2+
@@ -56,7 +56,7 @@ BuildRequires:	pkgconfig(shared-mime-info)
 %description
 KDE Telepathy KDED module
 
-%files
+%files -f kded_ktp_integration_module.lang
 %{_libdir}/qt5/plugins/kcm_ktp_integration_module.so
 %{_libdir}/qt5/plugins/kded_ktp_integration_module.so
 %{_datadir}/dbus-1/services/org.freedesktop.Telepathy.Client.KTp.KdedIntegrationModule.service
@@ -72,3 +72,4 @@ KDE Telepathy KDED module
 
 %install
 %ninja_install -C build
+%find_lang kded_ktp_integration_module
