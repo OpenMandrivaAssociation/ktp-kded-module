@@ -1,6 +1,6 @@
 Summary:	KDE Telepathy KDED module
 Name:		ktp-kded-module
-Version:	 18.07.90
+Version:	 18.08.0
 Release:	1
 Epoch:		1
 License:	GPLv2+
