@@ -1,7 +1,7 @@
 Summary:	KDE Telepathy KDED module
 Name:		ktp-kded-module
 Version:	20.04.2
-Release:	1
+Release:	2
 Epoch:		1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -57,9 +57,11 @@ BuildRequires:	cmake(KF5People)
 BuildRequires:	cmake(TelepathyLoggerQt)
 BuildRequires:	cmake(KF5IdleTime)
 BuildRequires:	pkgconfig(shared-mime-info)
+BuildRequires:	dbus-tools
+Requires:	dbus-tools
 
 %description
-KDE Telepathy KDED module
+KDE Telepathy KDED module.
 
 %files -f kded_ktp_integration_module.lang
 %{_libdir}/qt5/plugins/kcm_ktp_integration_module.so
